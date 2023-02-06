@@ -8,7 +8,7 @@ namespace ConsoleApp17
         {
             Person Alex = new Person("Alex", 24);
             Person Alexander = new Person();
-            Console.WriteLine(Alex.Move(Alex.Age));
+            Console.WriteLine(Alex.Move(Alex.FullName));
             Console.WriteLine(Alex.Talk(Alex.FullName));
         }
         
@@ -27,10 +27,10 @@ namespace ConsoleApp17
             string FullName = "Такой- то "  + fullname + " говорит.";
             return FullName;
         }
-        public string Move(sbyte age)
+        public string Move(string fullname)
         {
-            string Age = "Возраст " + age;
-            return Age;
+            string FullName = "Такой- то "  + fullname + " говорит.";
+            return FullName;
         }
         public Person()
         {
